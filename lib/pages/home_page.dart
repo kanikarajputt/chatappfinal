@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:chat_app/services/auth/auth_service.dart';
 import 'package:chat_app/services/chat/chat_service.dart';
 import 'package:chat_app/components/user_tile.dart';
-import 'package:chat_app/pages/chat_page.dart'; // 👈 import ChatPage directly
+import 'package:chat_app/pages/chat_page.dart'; 
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});

@@ -33,7 +33,7 @@ class SettingsPage extends StatelessWidget {
             children: [
               const CircleAvatar(
                 radius: 30,
-                backgroundImage: AssetImage('assets/images/default_profile.png'), // you can add this image
+                backgroundImage: AssetImage('assets/images/default_profile.png'), 
               ),
               const SizedBox(width: 16),
               Column(
@@ -66,7 +66,7 @@ class SettingsPage extends StatelessWidget {
             title: const Text("Appearance"),
             trailing: CupertinoSwitch(
               value: themeProvider.isDarkMode,
-              onChanged: (value) => themeProvider.toggleTheme(), // 👈 dark mode toggle
+              onChanged: (value) => themeProvider.toggleTheme(), 
             ),
           ),
 
@@ -93,7 +93,7 @@ class SettingsPage extends StatelessWidget {
               "Logout",
               style: TextStyle(color: Colors.red),
             ),
-            onTap: () => logout(context), // 👈 logout
+            onTap: () => logout(context), 
           ),
         ],
       ),
