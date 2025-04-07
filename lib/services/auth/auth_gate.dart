@@ -1,3 +1,4 @@
+import 'package:chat_app/pages/main_navigation_page.dart';
 import 'package:chat_app/services/auth/login_or_register.dart';
 import 'package:chat_app/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,8 @@ class AuthGate extends StatelessWidget {
         //user logged in
 
         if (snapshot.hasData){
-          return  HomePage();
+          return MainNavigationPage(); // 👈 instead of HomePage()
+
         }
 
         //user NOT logged in

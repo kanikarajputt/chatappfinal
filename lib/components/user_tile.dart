@@ -7,8 +7,6 @@ class UserTile extends StatelessWidget {
     super.key,
     required this.text,
     required this.onTap,
-    
-    
   });
 
   @override
@@ -24,19 +22,19 @@ class UserTile extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Row(
           children: [
-            //icon
-           const Icon(Icons.person),
+            // profile photo in circular shape
+            CircleAvatar(
+              child: Icon(Icons.person, color: Colors.white),
+              backgroundColor: Colors.grey.shade700,
+            ),
 
             const SizedBox(width: 20),
 
             // user name
             Text(text),
-          ],),
-      )
-      
-      
-      
-      
-      );
+          ],
+        ),
+      ),
+    );
   }
 }
